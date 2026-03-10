@@ -1,4 +1,10 @@
 <?php
+
+use App\Factory\VehiculeFactory;
+
 require('../vendor/autoload.php');
 
-# Essayer d'utiliser votre factory ici
+$factory = new VehiculeFactory(8, "gazole");
+$truck = $factory->getTruck();
+
+$vehicule = $factory->getVehicule(30, 10.5);
