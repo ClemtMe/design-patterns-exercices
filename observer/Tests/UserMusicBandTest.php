@@ -9,7 +9,7 @@ use App\MusicBand;
 
 class UserMusicBandTest extends TestCase
 {
-    public function testBasicLaptop()
+    public function testMusicBand()
     {
         $albert = new User('Albert Mudhat');
         $michelle = new User('Michelle Ectron');
@@ -22,7 +22,7 @@ class UserMusicBandTest extends TestCase
         $band->attach($michelle);
         $band->attach($yves);
 
-        $band->detach($yves);
+        $band->detach($albert);
 
         $band->addNewConcertDate('19/11/2027.', 'Bercy');
 
